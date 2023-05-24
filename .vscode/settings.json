@@ -4,7 +4,13 @@
   "tailwindCSS.experimental.classRegex": [
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
   ],
-  "cSpell.words": ["callees", "classname"],
+  "cSpell.words": [
+    "callees",
+    "classname",
+    "pinterest",
+    "spotify",
+    "youtube"
+  ],
   "editor.rulers": [80],
   "prettier.printWidth": 80,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
