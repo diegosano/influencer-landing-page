@@ -74,6 +74,12 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundImage: {
+        "radial-blur":
+          "radial-gradient(theme('colors.secondary.800 / 95%'),theme('colors.secondary.800 / 90%'),theme('colors.secondary.700 / 90%'), theme('colors.secondary.600 / 85%'), theme('colors.secondary.500 / 85%'), theme('colors.secondary.500 / 70%'), theme('colors.secondary.500 / 55%'), transparent 72%)",
+        "linear-blur":
+          "linear-gradient(transparent, theme('colors.secondary.500 / 70%'), theme('colors.secondary.600 / 85%'), theme('colors.secondary.700 / 90%'), theme('colors.secondary.800 / 95%'))",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
