@@ -1,5 +1,3 @@
-const { fontFamily } = require("tailwindcss/defaultTheme")
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -9,70 +7,62 @@ module.exports = {
     "./app/**/*.{ts,tsx}",
   ],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+      screens: {
+        xs: "375px",
+        sm: "375px",
+        md: "744px",
+        lg: "1024px",
+        xl: "1440px",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        sans: ["var(--font-sans)"],
       },
-      keyframes: {
-        "accordion-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
-        },
+      fontSize: {
+        lg: ["24px", "32px"],
+        md: ["20px", "32px"],
+        base: ["18px", "24px"],
+        sm: ["18px", "24px"],
+        xs: ["16px", "24px"],
+        xxs: ["14px", "20px"],
       },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+      colors: {
+        primary: {
+          100: "#ebf3f9",
+          200: "#b1d0e7",
+          300: "#76acd5",
+          400: "#3c89c3",
+          500: "#306d9c",
+          600: "#1e4462",
+          700: "#12293b",
+          800: "#060e14",
+        },
+        secondary: {
+          100: "#edf1f7",
+          200: "#c9d4e8",
+          300: "#a6b7d9",
+          400: "#829ac9",
+          500: "#5e7dba",
+          600: "#4563a1",
+          700: "#364d7d",
+          800: "#263759",
+          900: "#172136",
+        },
+        tertiary: {
+          100: "#555555",
+          200: "#454544",
+          300: "#373736",
+          400: "#262625",
+        },
+        neutral: {
+          100: "#f5f5f5",
+          200: "#e0e0e0",
+          300: "#cdcdcd",
+          400: "#b8b8b8",
+          500: "#a6a6a6",
+          600: "#909090",
+          700: "#808080",
+        },
       },
       backgroundImage: {
         "radial-blur":
