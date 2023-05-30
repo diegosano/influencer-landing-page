@@ -22,23 +22,26 @@ export function CarouselCard({ frame, image, link }: CarouselCardProps) {
           className="absolute -z-10 h-full w-full object-cover"
           src={image.url}
           alt={image.alt}
+          fill
         />
         <div
           v-if="frame"
           className="absolute inset-0 flex opacity-0 transition duration-500 hover:opacity-100"
         >
           <div className="relative grow">
-            <div v-if="frame.iconName" className="absolute left-0 top-0">
-              <div className="relative">
-                <div className="absolute h-[170px] w-[170px] -translate-x-1/2 -translate-y-1/2 bg-radial-blur"></div>
-                {Icon && (
+            {Icon && (
+              <div className="absolute left-0 top-0">
+                <div className="relative">
+                  <div className="absolute h-[170px] w-[170px] -translate-x-1/2 -translate-y-1/2 bg-radial-blur"></div>
                   <Icon
                     className="absolute left-3 top-3 text-neutral-50"
                     size={16}
+                    width={16}
+                    height={16}
                   />
-                )}
+                </div>
               </div>
-            </div>
+            )}
 
             {frame?.paragraph && (
               <div className="absolute inset-x-0 bottom-0 bg-linear-blur px-3 pb-3 pt-5 text-neutral-50">

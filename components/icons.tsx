@@ -52,6 +52,8 @@ export const Icons = {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      height={16}
+      width={16}
       {...props}
     >
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -74,7 +76,7 @@ export const Icons = {
       />
     </svg>
   ),
-  gitHub: (props: LucideProps) => (
+  github: (props: LucideProps) => (
     <svg viewBox="0 0 438.549 438.549" {...props}>
       <path
         fill="currentColor"

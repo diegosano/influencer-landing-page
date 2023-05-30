@@ -21,7 +21,7 @@ const breakpoints: SwiperOptions["breakpoints"] = {
   },
 }
 
-interface CarouselProps {
+export interface CarouselProps {
   cards: CarouselCardProps[]
   from?: "left" | "right"
 }
@@ -49,7 +49,7 @@ export function Carousel({ cards, from = "right" }: CarouselProps) {
       }}
     >
       {cards.map((card) => (
-        <SwiperSlide>
+        <SwiperSlide key={card.link}>
           <CarouselCard
             image={card.image}
             link={card.link}
