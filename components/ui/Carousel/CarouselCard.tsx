@@ -22,6 +22,7 @@ export function CarouselCard({ frame, image, link }: CarouselCardProps) {
           className="absolute -z-10 h-full w-full object-cover"
           src={image.url}
           alt={image.alt}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           fill
         />
         <div
