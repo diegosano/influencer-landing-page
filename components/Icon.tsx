@@ -103,3 +103,30 @@ export const Icons = {
     </svg>
   ),
 }
+
+const ICONS_SIZES = {
+  xxs: 16,
+  xs: 20,
+  sm: 24,
+  md: 28,
+  lg: 34,
+  xl: 38,
+}
+
+interface IconProps extends LucideProps {
+  iconName: IconsNames
+  size: keyof typeof ICONS_SIZES
+}
+
+export function Icon({ iconName, size, ...rest }: IconProps) {
+  const Icon = Icons[iconName]
+
+  return (
+    <Icon
+      size={ICONS_SIZES[size]}
+      width={ICONS_SIZES[size]}
+      height={ICONS_SIZES[size]}
+      {...rest}
+    />
+  )
+}

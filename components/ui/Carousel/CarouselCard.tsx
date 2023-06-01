@@ -2,7 +2,7 @@ import NextImage from "next/image"
 import Link from "next/link"
 
 import { Image } from "@/types/media"
-import { Icons, IconsNames } from "@/components/Icons"
+import { Icon, IconsNames } from "@/components/Icon"
 
 export interface CarouselCardProps {
   frame?: {
@@ -14,7 +14,6 @@ export interface CarouselCardProps {
 }
 
 export function CarouselCard({ frame, image, link }: CarouselCardProps) {
-  const Icon = frame?.iconName ? Icons[frame.iconName] : null
   return (
     <Link href={link} className="block h-[280px] max-w-[500px]">
       <div className="relative h-full overflow-hidden rounded-2xl">
@@ -29,15 +28,14 @@ export function CarouselCard({ frame, image, link }: CarouselCardProps) {
         {frame && (
           <div className="absolute inset-0 flex opacity-0 transition duration-500 hover:opacity-100">
             <div className="relative grow">
-              {Icon && (
+              {frame.iconName && (
                 <div className="absolute left-0 top-0">
                   <div className="relative">
                     <div className="absolute h-[170px] w-[170px] -translate-x-1/2 -translate-y-1/2 bg-radial-blur"></div>
                     <Icon
                       className="absolute left-3 top-3 text-neutral-50"
-                      size={16}
-                      width={16}
-                      height={16}
+                      size="md"
+                      iconName={frame.iconName}
                     />
                   </div>
                 </div>

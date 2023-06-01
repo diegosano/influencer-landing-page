@@ -3,7 +3,7 @@ import Link from "next/link"
 
 import { Image } from "@/types/media"
 import { Button } from "@/components/ui/Button"
-import { Icons, IconsNames } from "@/components/Icons"
+import { Icon, IconsNames } from "@/components/Icon"
 
 export interface NavigationProps {
   socialMedias: {
@@ -27,16 +27,13 @@ export function Navigation({ socialMedias, profilePicture }: NavigationProps) {
       </div>
 
       <div className="flex gap-4">
-        {socialMedias.map((socialMedia) => {
-          const Icon = Icons[socialMedia.iconName]
-          return (
-            <Button asChild className="p-0">
-              <Link href={socialMedia.link}>
-                <Icon size={20} width={20} height={20} />
-              </Link>
-            </Button>
-          )
-        })}
+        {socialMedias.map((socialMedia) => (
+          <Button asChild className="p-0">
+            <Link href={socialMedia.link}>
+              <Icon iconName={socialMedia.iconName} size="sm" />
+            </Link>
+          </Button>
+        ))}
       </div>
     </nav>
   )
