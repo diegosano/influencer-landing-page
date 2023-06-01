@@ -62,6 +62,8 @@ module.exports = {
           "radial-gradient(theme('colors.secondary.800 / 95%'),theme('colors.secondary.800 / 90%'),theme('colors.secondary.700 / 90%'), theme('colors.secondary.600 / 85%'), theme('colors.secondary.500 / 85%'), theme('colors.secondary.500 / 70%'), theme('colors.secondary.500 / 55%'), transparent 72%)",
         "linear-blur":
           "linear-gradient(transparent, theme('colors.secondary.500 / 70%'), theme('colors.secondary.600 / 85%'), theme('colors.secondary.700 / 90%'), theme('colors.secondary.800 / 95%'))",
+        "background-blur":
+          "radial-gradient(theme('colors.secondary.800/70%'),theme('colors.secondary.800/65%'),theme('colors.secondary.700/65%'),theme('colors.secondary.700/60%'),theme('colors.secondary.600/60%'),theme('colors.secondary.600/55%'),theme('colors.secondary.500/50%'),theme('colors.secondary.500/45%'),theme('colors.secondary.400/40%'),theme('colors.secondary.400/35%'),theme('colors.secondary.300/30%'),theme('colors.secondary.300/25%'),theme('colors.secondary.200/20%'),theme('colors.secondary.200/10%'),theme('colors.secondary.100/10%'),theme('colors.secondary.100/5%'),transparent 72%)",
       },
     },
   },
