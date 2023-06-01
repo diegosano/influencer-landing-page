@@ -22,3 +22,8 @@ export const getImage = (): Image => ({
   url: faker.image.url(),
   alt: faker.lorem.words(5),
 })
+
+export const getLink = () => ({
+  title: faker.lorem.words({ min: 1, max: 8 }),
+  to: faker.internet.url(),
+})

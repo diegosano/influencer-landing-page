@@ -1,11 +1,8 @@
 import { faker } from "@faker-js/faker";
 
 import { TextContentProps } from "@/components/ui/TextContent";
+import { getLink } from "./helper";
 
-const getLink = () => ({
-  title: faker.lorem.words({ min: 1, max: 3 }),
-  to: faker.internet.url(),
-})
 
 export const TextContentLeftMock: TextContentProps = {
   paragraphs: [faker.lorem.words({ min: 10, max: 30 })],
