@@ -2,11 +2,11 @@ import NextImage from "next/image"
 import Link from "next/link"
 
 import { Image } from "@/types/media"
-import { Icons } from "@/components/Icons"
+import { Icons, IconsNames } from "@/components/Icons"
 
 export interface CarouselCardProps {
   frame?: {
-    iconName?: keyof typeof Icons
+    iconName?: IconsNames
     paragraph: string
   }
   image: Image

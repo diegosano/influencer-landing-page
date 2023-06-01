@@ -1,15 +1,15 @@
 import Link from "next/link"
 import clsx from "clsx"
 
-import { Icons } from "../Icons"
-import { Button } from "./Button"
+import { Button } from "@/components/ui/Button"
+import { Icons, IconsNames } from "@/components/Icons"
 
 export interface LinkListProps {
   links: {
     to: string
     title: string
   }[]
-  iconName?: keyof typeof Icons
+  iconName?: IconsNames
   darkMode?: boolean
 }
 

@@ -14,6 +14,7 @@ import {
 } from "lucide-react"
 
 export type Icon = LucideIcon
+export type IconsNames = keyof typeof Icons
 
 export const Icons = {
   sun: SunMedium,
