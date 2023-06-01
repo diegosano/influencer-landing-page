@@ -8,13 +8,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      screens: {
-        xs: "375px",
-        sm: "375px",
-        md: "744px",
-        lg: "1024px",
-        xl: "1440px",
-      },
       fontFamily: {
         sans: ["var(--font-sans)"],
       },

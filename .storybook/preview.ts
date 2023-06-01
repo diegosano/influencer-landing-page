@@ -1,7 +1,7 @@
 import "@/styles/globals.css"
 
 import type { Preview } from "@storybook/react"
-import viewport from './viewport';
+import viewports from './viewports';
 
 const preview: Preview = {
   parameters: {
@@ -12,7 +12,9 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
-    viewport
+    viewport: {
+      viewports,
+    }
   },
 }
 
