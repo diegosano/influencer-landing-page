@@ -1,5 +1,5 @@
 import { LinkListProps } from "@/components/ui/LinkList";
-import { getLink } from "./helper";
+import { getLink } from "@/stories/mock/helper";
 
 export const LinkListMock: LinkListProps = {
   iconName: 'external-link',

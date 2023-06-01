@@ -42,7 +42,7 @@ export function TextContent({
 
   return (
     <div
-      className={`flex flex-col gap-4 ${textContentAlignments[alignment][0]}`}
+      className={`flex flex-col gap-4 px-6 lg:px-8 ${textContentAlignments[alignment][0]}`}
     >
       <h2 className={cn(textClasses)}>{title}</h2>
 

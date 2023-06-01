@@ -30,9 +30,9 @@ export function Navigation({ socialMedias, profilePicture }: NavigationProps) {
         {socialMedias.map((socialMedia) => {
           const Icon = Icons[socialMedia.iconName]
           return (
-            <Button asChild>
+            <Button asChild className="p-0">
               <Link href={socialMedia.link}>
-                <Icon size={16} width={16} height={16} />
+                <Icon size={20} width={20} height={20} />
               </Link>
             </Button>
           )

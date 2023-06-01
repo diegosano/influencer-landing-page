@@ -1,17 +1,17 @@
+import { useMemo } from "react"
 import { FreeMode, Mousewheel } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
 import type { SwiperOptions } from "swiper/types"
 
 import { CarouselCard, type CarouselCardProps } from "./CarouselCard"
 import "swiper/css"
-import { useMemo } from "react"
 
 const breakpoints: SwiperOptions["breakpoints"] = {
   1: {
     slidesPerView: 1,
     spaceBetween: 16,
   },
-  744: {
+  768: {
     slidesPerView: 2,
     spaceBetween: 24,
   },

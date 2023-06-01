@@ -1,7 +1,7 @@
 import { faker } from "@faker-js/faker";
 
 import { TextContentProps } from "@/components/ui/TextContent";
-import { getLink } from "./helper";
+import { getLink } from "@/stories/mock/helper";
 
 
 export const TextContentLeftMock: TextContentProps = {
